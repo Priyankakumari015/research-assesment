@@ -53,10 +53,11 @@ genai_project/
 │   ├── urls.py
 │   └── ...
 │
-├── interface.py                      # Streamlit frontend 
+├── interface.py                 
 ├── temp/                       # Stores uploaded files (optional)
 ├── requirements.txt            # Python dependencies
 ├── README.md                   # Project documentation
+
 
 
 
