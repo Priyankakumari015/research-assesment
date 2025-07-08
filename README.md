@@ -1,4 +1,5 @@
-# 📄 GenAI Document Assistant — Data Science Internship Assessment
+# 📄 GenAI Document Assistant — research-assesment
+
 
 A full-stack **GenAI-powered assistant** that understands documents. Upload any `.PDF` or `.TXT` file, and the system can:
 
@@ -35,37 +36,37 @@ Built using **LangChain**, **Flan-T5**, **Django**, and **Streamlit**.
 ---
 
 ## 📁 Project Structure
+genai_project/
+│
+├── assistant/                  # Django app (API layer)
+│   ├── views.py
+│   ├── urls.py
+│   └── models.py
+│
+├── backend/                    # Core LangChain + NLP logic
+│   ├── qa_engine.py            # Custom QA logic
+│   ├── summarizer.py           # Document summarization logic
+│   ├── challenge.py            # Auto-question generation
+│
+├── genai_project/              # Django project settings
+│   ├── settings.py
+│   ├── urls.py
+│   └── ...
+│
+├── interface.py                      # Streamlit frontend 
+├── temp/                       # Stores uploaded files (optional)
+├── requirements.txt            # Python dependencies
+├── README.md                   # Project documentation
 
--genai_project/
-- │
-- ├── assistant/ # Django app (API layer)
-- │ ├── views.py
-- │ ├── urls.py
-- │ └── models.py
-- │
-- ├── backend/ # Core LangChain + QA/Summarizer logic
-- │ ├── qa_engine.py # Custom heading-aware QA logic
-- │ ├── summarizer.py # Custom summarizer with heading-aware rules
-- │ ├── challenge.py # Auto-question generator logic
-- │
-- ├── genai_project/ # Django settings and routing
-- │ ├── settings.py
-- │ ├── urls.py
-- │ └── ...
-- │
-- ├── app.py # Streamlit frontend
-- ├── temp/ # Stores uploaded files (optional)
-- ├── requirements.txt
-- └── README.md
 
----
+
 
 ## 🚀 How to Run Locally
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/genai-doc-assistant.git
+git clone https://github.com/Priyankakumari015/research-assesment.git
 cd genai-doc-assistant
 ```
 ### 2.Create a Virtual Environment and Install Dependencies
@@ -83,7 +84,7 @@ python manage.py runserver
 ### 4.Run the Streamlit Frontend
 Open a new terminal in the root project folder and run:
 ```bash
-streamlit run app.py
+streamlit run interface.py
 ```
 ---
 
